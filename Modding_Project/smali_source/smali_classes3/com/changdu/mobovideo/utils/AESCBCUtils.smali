@@ -199,7 +199,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    # PATCH: Replace StatusCode:10011 with StatusCode:10000 in decrypted response
+    # PATCH: Global VIP and Content Unlocking
     const-string p1, "\"StatusCode\":10011"
     const-string p3, "\"StatusCode\":10000"
     invoke-virtual {p2, p1, p3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
@@ -210,8 +210,33 @@
     invoke-virtual {p2, p1, p3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
     move-result-object p2
 
-    const-string p1, "\"StatusCode\" : 10011"
-    const-string p3, "\"StatusCode\" : 10000"
+    const-string p1, "\"isVip\":0"
+    const-string p3, "\"isVip\":1"
+    invoke-virtual {p2, p1, p3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    move-result-object p2
+
+    const-string p1, "\"isVipArea\":0"
+    const-string p3, "\"isVipArea\":1"
+    invoke-virtual {p2, p1, p3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    move-result-object p2
+
+    const-string p1, "\"vipStatus\":0"
+    const-string p3, "\"vipStatus\":1"
+    invoke-virtual {p2, p1, p3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    move-result-object p2
+
+    const-string p1, "\"isPremium\":0"
+    const-string p3, "\"isPremium\":1"
+    invoke-virtual {p2, p1, p3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    move-result-object p2
+
+    const-string p1, "\"is_unlocked\":0"
+    const-string p3, "\"is_unlocked\":1"
+    invoke-virtual {p2, p1, p3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    move-result-object p2
+
+    const-string p1, "\"balance\":0"
+    const-string p3, "\"balance\":999999"
     invoke-virtual {p2, p1, p3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
     move-result-object p2
     # END PATCH
