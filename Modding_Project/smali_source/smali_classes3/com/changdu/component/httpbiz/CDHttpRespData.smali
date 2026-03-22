@@ -761,13 +761,19 @@
 .end method
 
 .method public final getStatusCode()I
-    .locals 1
+    .locals 2
 
     .line 1
     iget v0, p0, Lcom/changdu/component/httpbiz/CDHttpRespData;->statusCode:I
 
-    .line 2
-    .line 3
+    # PATCH: If statusCode == NEED_CHARGE (0x271b), return SUCCESS (0x2710)
+    const/16 v1, 0x271b
+
+    if-ne v0, v1, :cond_original
+
+    const/16 v0, 0x2710
+
+    :cond_original
     return v0
 .end method
 
