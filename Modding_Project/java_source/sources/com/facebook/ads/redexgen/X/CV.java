@@ -1,0 +1,13 @@
+package com.facebook.ads.redexgen.X;
+
+import android.os.Handler;
+/* loaded from: assets/audience_network.dex */
+public final class CV {
+    public Handler A00;
+    public CX A01;
+
+    public CV(Handler handler, CX cx) {
+        this.A00 = handler;
+        this.A01 = cx;
+    }
+}

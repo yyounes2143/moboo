@@ -1,0 +1,158 @@
+package com.sensorsdata.analytics.android.sdk.track;
+/* loaded from: classes6.dex */
+public final class R {
+
+    /* loaded from: classes6.dex */
+    public static final class id {
+        public static final int sensors_analytics_debug_mode_cancel = 0x7f0802d5;
+        public static final int sensors_analytics_debug_mode_message = 0x7f0802d6;
+        public static final int sensors_analytics_debug_mode_only = 0x7f0802d7;
+        public static final int sensors_analytics_debug_mode_title = 0x7f0802d8;
+        public static final int sensors_analytics_debug_mode_track = 0x7f0802d9;
+        public static final int sensors_analytics_loading = 0x7f0802da;
+        public static final int sensors_analytics_pairing_code = 0x7f0802db;
+        public static final int sensors_analytics_rotate_layout = 0x7f0802dc;
+        public static final int sensors_analytics_tag_view_activity = 0x7f0802dd;
+        public static final int sensors_analytics_tag_view_fragment_name = 0x7f0802de;
+        public static final int sensors_analytics_tag_view_fragment_name2 = 0x7f0802df;
+        public static final int sensors_analytics_tag_view_id = 0x7f0802e0;
+        public static final int sensors_analytics_tag_view_ignored = 0x7f0802e1;
+        public static final int sensors_analytics_tag_view_keyboard = 0x7f0802e2;
+        public static final int sensors_analytics_tag_view_onclick_timestamp = 0x7f0802e3;
+        public static final int sensors_analytics_tag_view_properties = 0x7f0802e4;
+        public static final int sensors_analytics_tag_view_rn_key = 0x7f0802e5;
+        public static final int sensors_analytics_tag_view_value = 0x7f0802e6;
+        public static final int sensors_analytics_tag_view_webview = 0x7f0802e7;
+        public static final int sensors_analytics_tag_view_webview_visual = 0x7f0802e8;
+        public static final int sensors_analytics_verification_code_title = 0x7f0802e9;
+        public static final int sensorsdata_analytics_loading_image1 = 0x7f0802ea;
+        public static final int sensorsdata_analytics_loading_image2 = 0x7f0802eb;
+        public static final int sensorsdata_analytics_loading_image3 = 0x7f0802ec;
+        public static final int sensorsdata_analytics_loading_image4 = 0x7f0802ed;
+
+        private id() {
+        }
+    }
+
+    /* loaded from: classes6.dex */
+    public static final class layout {
+        public static final int sensors_analytics_debug_mode_dialog_content = 0x7f0b00d9;
+        public static final int sensors_analytics_dialog_loading = 0x7f0b00da;
+        public static final int sensors_analytics_verification_code = 0x7f0b00db;
+
+        private layout() {
+        }
+    }
+
+    /* loaded from: classes6.dex */
+    public static final class string {
+        public static final int sensors_analytics_ad_channel = 0x7f110275;
+        public static final int sensors_analytics_ad_create_link_callback_missing = 0x7f110276;
+        public static final int sensors_analytics_ad_create_link_channel_name_missing = 0x7f110277;
+        public static final int sensors_analytics_ad_create_link_common_redirect_url_missing = 0x7f110278;
+        public static final int sensors_analytics_ad_create_link_custom_url_error = 0x7f110279;
+        public static final int sensors_analytics_ad_create_link_no_network = 0x7f11027a;
+        public static final int sensors_analytics_ad_create_link_response_data_error = 0x7f11027b;
+        public static final int sensors_analytics_ad_create_link_success = 0x7f11027c;
+        public static final int sensors_analytics_ad_create_link_template_id_missing = 0x7f11027d;
+        public static final int sensors_analytics_ad_create_link_token_missing = 0x7f11027e;
+        public static final int sensors_analytics_ad_dialog_activate = 0x7f11027f;
+        public static final int sensors_analytics_ad_dialog_cancel = 0x7f110280;
+        public static final int sensors_analytics_ad_dialog_content = 0x7f110281;
+        public static final int sensors_analytics_ad_dialog_ok = 0x7f110282;
+        public static final int sensors_analytics_ad_dialog_starting = 0x7f110283;
+        public static final int sensors_analytics_ad_dialog_title = 0x7f110284;
+        public static final int sensors_analytics_ad_error_debug_fail_content = 0x7f110285;
+        public static final int sensors_analytics_ad_error_debug_fail_title = 0x7f110286;
+        public static final int sensors_analytics_ad_error_network = 0x7f110287;
+        public static final int sensors_analytics_ad_error_project = 0x7f110288;
+        public static final int sensors_analytics_ad_error_request = 0x7f110289;
+        public static final int sensors_analytics_ad_error_retry = 0x7f11028a;
+        public static final int sensors_analytics_ad_error_url = 0x7f11028b;
+        public static final int sensors_analytics_ad_error_whitelist = 0x7f11028c;
+        public static final int sensors_analytics_ad_listener = 0x7f11028d;
+        public static final int sensors_analytics_ad_whitelist_platform_error = 0x7f11028e;
+        public static final int sensors_analytics_ad_whitelist_project_error = 0x7f11028f;
+        public static final int sensors_analytics_ad_whitelist_request_falied = 0x7f110290;
+        public static final int sensors_analytics_ad_whitelist_request_success = 0x7f110291;
+        public static final int sensors_analytics_carrier = 0x7f110292;
+        public static final int sensors_analytics_carrier1 = 0x7f110293;
+        public static final int sensors_analytics_carrier2 = 0x7f110294;
+        public static final int sensors_analytics_carrier_mobile = 0x7f110295;
+        public static final int sensors_analytics_carrier_satellite = 0x7f110296;
+        public static final int sensors_analytics_carrier_telecom = 0x7f110297;
+        public static final int sensors_analytics_carrier_tietong = 0x7f110298;
+        public static final int sensors_analytics_carrier_unicom = 0x7f110299;
+        public static final int sensors_analytics_carrier_unknown = 0x7f11029a;
+        public static final int sensors_analytics_common_cancel = 0x7f11029b;
+        public static final int sensors_analytics_common_continue = 0x7f11029c;
+        public static final int sensors_analytics_common_no = 0x7f11029d;
+        public static final int sensors_analytics_common_ok = 0x7f11029e;
+        public static final int sensors_analytics_common_title = 0x7f11029f;
+        public static final int sensors_analytics_debug_and_track = 0x7f1102a0;
+        public static final int sensors_analytics_debug_name_default = 0x7f1102a1;
+        public static final int sensors_analytics_debug_name_only = 0x7f1102a2;
+        public static final int sensors_analytics_debug_name_track = 0x7f1102a3;
+        public static final int sensors_analytics_debug_only = 0x7f1102a4;
+        public static final int sensors_analytics_debug_tip_off = 0x7f1102a5;
+        public static final int sensors_analytics_debug_tip_only = 0x7f1102a6;
+        public static final int sensors_analytics_debug_tip_track = 0x7f1102a7;
+        public static final int sensors_analytics_debug_view_title = 0x7f1102a8;
+        public static final int sensors_analytics_encrypt_disable = 0x7f1102a9;
+        public static final int sensors_analytics_encrypt_fail = 0x7f1102aa;
+        public static final int sensors_analytics_encrypt_key_null = 0x7f1102ab;
+        public static final int sensors_analytics_encrypt_pass = 0x7f1102ac;
+        public static final int sensors_analytics_encrypt_verify_fail_type = 0x7f1102ad;
+        public static final int sensors_analytics_encrypt_verify_fail_version = 0x7f1102ae;
+        public static final int sensors_analytics_heatmap = 0x7f1102af;
+        public static final int sensors_analytics_heatmap_dialog_error = 0x7f1102b0;
+        public static final int sensors_analytics_heatmap_mobile_name = 0x7f1102b1;
+        public static final int sensors_analytics_heatmap_network_fail = 0x7f1102b2;
+        public static final int sensors_analytics_heatmap_sdk_fail = 0x7f1102b3;
+        public static final int sensors_analytics_heatmap_wifi_name = 0x7f1102b4;
+        public static final int sensors_analytics_popwindow_fail = 0x7f1102b5;
+        public static final int sensors_analytics_remote_config = 0x7f1102b6;
+        public static final int sensors_analytics_remote_fail = 0x7f1102b7;
+        public static final int sensors_analytics_remote_other_error = 0x7f1102b8;
+        public static final int sensors_analytics_remote_succeed = 0x7f1102b9;
+        public static final int sensors_analytics_remote_tip_error_appid = 0x7f1102ba;
+        public static final int sensors_analytics_remote_tip_error_disable_network = 0x7f1102bb;
+        public static final int sensors_analytics_remote_tip_error_disable_remote = 0x7f1102bc;
+        public static final int sensors_analytics_remote_tip_error_network = 0x7f1102bd;
+        public static final int sensors_analytics_remote_tip_error_os = 0x7f1102be;
+        public static final int sensors_analytics_remote_tip_error_project = 0x7f1102bf;
+        public static final int sensors_analytics_remote_tip_error_qrcode = 0x7f1102c0;
+        public static final int sensors_analytics_remote_version_error = 0x7f1102c1;
+        public static final int sensors_analytics_remote_version_tip = 0x7f1102c2;
+        public static final int sensors_analytics_visual = 0x7f1102c3;
+        public static final int sensors_analytics_visual_appid_error = 0x7f1102c4;
+        public static final int sensors_analytics_visual_cache_error = 0x7f1102c5;
+        public static final int sensors_analytics_visual_cache_no_property_error = 0x7f1102c6;
+        public static final int sensors_analytics_visual_code_loading = 0x7f1102c7;
+        public static final int sensors_analytics_visual_code_title = 0x7f1102c8;
+        public static final int sensors_analytics_visual_config_error = 0x7f1102c9;
+        public static final int sensors_analytics_visual_dialog_error = 0x7f1102ca;
+        public static final int sensors_analytics_visual_event_error = 0x7f1102cb;
+        public static final int sensors_analytics_visual_getProperty_error = 0x7f1102cc;
+        public static final int sensors_analytics_visual_mobile_name = 0x7f1102cd;
+        public static final int sensors_analytics_visual_network_fail = 0x7f1102ce;
+        public static final int sensors_analytics_visual_other_error = 0x7f1102cf;
+        public static final int sensors_analytics_visual_parseProperty_error = 0x7f1102d0;
+        public static final int sensors_analytics_visual_property_error = 0x7f1102d1;
+        public static final int sensors_analytics_visual_property_switch_error = 0x7f1102d2;
+        public static final int sensors_analytics_visual_regex_error = 0x7f1102d3;
+        public static final int sensors_analytics_visual_sa_flutter_error = 0x7f1102d4;
+        public static final int sensors_analytics_visual_sa_h5 = 0x7f1102d5;
+        public static final int sensors_analytics_visual_sa_h5_error = 0x7f1102d6;
+        public static final int sensors_analytics_visual_sa_h5_error_link = 0x7f1102d7;
+        public static final int sensors_analytics_visual_sdk_fail = 0x7f1102d8;
+        public static final int sensors_analytics_visual_switch_error = 0x7f1102d9;
+        public static final int sensors_analytics_visual_wifi_name = 0x7f1102da;
+
+        private string() {
+        }
+    }
+
+    private R() {
+    }
+}

@@ -1,0 +1,24 @@
+.class public interface abstract Lcom/didi/drouter/service/IFeatureMatcher;
+.super Ljava/lang/Object;
+.source "Proguard"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract Wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww(Ljava/lang/Object;)Z
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)Z"
+        }
+    .end annotation
+.end method

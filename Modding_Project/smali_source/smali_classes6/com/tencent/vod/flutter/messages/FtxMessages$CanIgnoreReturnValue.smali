@@ -1,0 +1,27 @@
+.class interface abstract annotation Lcom/tencent/vod/flutter/messages/FtxMessages$CanIgnoreReturnValue;
+.super Ljava/lang/Object;
+.source "Proguard"
+
+# interfaces
+.implements Ljava/lang/annotation/Annotation;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/tencent/vod/flutter/messages/FtxMessages;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x2609
+    name = "CanIgnoreReturnValue"
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Retention;
+    value = .enum Ljava/lang/annotation/RetentionPolicy;->CLASS:Ljava/lang/annotation/RetentionPolicy;
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Target;
+    value = {
+        .enum Ljava/lang/annotation/ElementType;->METHOD:Ljava/lang/annotation/ElementType;
+    }
+.end annotation

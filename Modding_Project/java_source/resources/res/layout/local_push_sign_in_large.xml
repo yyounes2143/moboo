@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_local_push_sign_in_large" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/titleView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="12sp" android:textColor="#ccffffff" android:ellipsize="end" android:id="@+id/contentView" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+        <Chronometer android:textSize="14sp" android:textStyle="bold" android:textColor="#ffc31e" android:id="@+id/chronometerView" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="4dp" android:drawableStart="@drawable/ic_local_push_sign_in_clock"/>
+    </LinearLayout>
+    <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@+id/btnView" android:background="@drawable/bg_local_activity_sign_in_btn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="14dp" android:maxLines="1"/>
+</LinearLayout>

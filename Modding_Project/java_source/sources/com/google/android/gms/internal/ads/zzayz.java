@@ -1,0 +1,21 @@
+package com.google.android.gms.internal.ads;
+
+import android.app.Activity;
+import android.app.Application;
+import android.os.Bundle;
+/* compiled from: Proguard */
+/* loaded from: classes4.dex */
+final class zzayz implements zzazg {
+    final /* synthetic */ Activity zza;
+    final /* synthetic */ Bundle zzb;
+
+    public zzayz(zzazh zzazhVar, Activity activity, Bundle bundle) {
+        this.zza = activity;
+        this.zzb = bundle;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzazg
+    public final void zza(Application.ActivityLifecycleCallbacks activityLifecycleCallbacks) {
+        activityLifecycleCallbacks.onActivityCreated(this.zza, this.zzb);
+    }
+}

@@ -1,0 +1,41 @@
+package com.google.android.gms.internal.ads;
+
+import java.util.concurrent.Callable;
+/* JADX INFO: Access modifiers changed from: package-private */
+/* compiled from: Proguard */
+/* loaded from: classes4.dex */
+public final class zzgdy extends zzgdg {
+    final /* synthetic */ zzgdz zza;
+    private final Callable zzb;
+
+    public zzgdy(zzgdz zzgdzVar, Callable callable) {
+        this.zza = zzgdzVar;
+        callable.getClass();
+        this.zzb = callable;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgdg
+    public final Object zza() throws Exception {
+        return this.zzb.call();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgdg
+    public final String zzb() {
+        return this.zzb.toString();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgdg
+    public final void zzd(Throwable th) {
+        this.zza.zzd(th);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgdg
+    public final void zze(Object obj) {
+        this.zza.zzc(obj);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgdg
+    public final boolean zzg() {
+        return this.zza.isDone();
+    }
+}

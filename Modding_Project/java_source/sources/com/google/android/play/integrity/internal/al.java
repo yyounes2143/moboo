@@ -1,0 +1,25 @@
+package com.google.android.play.integrity.internal;
+/* compiled from: Proguard */
+/* loaded from: classes5.dex */
+public final class al implements ak {
+
+    /* renamed from: a  reason: collision with root package name */
+    private static final al f7741a = new al(null);
+    private final Object b;
+
+    private al(Object obj) {
+        this.b = obj;
+    }
+
+    public static ak b(Object obj) {
+        if (obj != null) {
+            return new al(obj);
+        }
+        throw new NullPointerException("instance cannot be null");
+    }
+
+    @Override // com.google.android.play.integrity.internal.an
+    public final Object a() {
+        return this.b;
+    }
+}

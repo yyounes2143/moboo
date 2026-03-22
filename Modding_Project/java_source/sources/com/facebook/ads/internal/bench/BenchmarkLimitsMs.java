@@ -1,0 +1,10 @@
+package com.facebook.ads.internal.bench;
+
+import com.facebook.infer.annotation.Nullsafe;
+/* compiled from: Proguard */
+@Nullsafe(Nullsafe.Mode.LOCAL)
+/* loaded from: classes3.dex */
+public class BenchmarkLimitsMs {
+    public static final int GSF = 5;
+    public static final int GSW = 1;
+}

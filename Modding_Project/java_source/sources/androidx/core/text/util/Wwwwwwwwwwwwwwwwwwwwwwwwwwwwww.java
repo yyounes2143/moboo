@@ -1,0 +1,5 @@
+package androidx.core.text.util;
+/* compiled from: Proguard */
+/* loaded from: classes.dex */
+public final /* synthetic */ class Wwwwwwwwwwwwwwwwwwwwwwwwwwwwww {
+}

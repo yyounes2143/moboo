@@ -1,0 +1,20 @@
+package com.mbridge.msdk.util;
+
+import android.database.sqlite.SQLiteDatabase;
+/* compiled from: Proguard */
+/* loaded from: classes4.dex */
+public final class d {
+    public static boolean a(SQLiteDatabase sQLiteDatabase) {
+        if (sQLiteDatabase != null) {
+            try {
+                if (sQLiteDatabase.isOpen()) {
+                    if (!sQLiteDatabase.isReadOnly()) {
+                        return true;
+                    }
+                }
+            } catch (Exception unused) {
+            }
+        }
+        return false;
+    }
+}

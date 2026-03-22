@@ -1,0 +1,11 @@
+.class interface abstract Lcom/google/android/gms/internal/ads/zzhab;
+.super Ljava/lang/Object;
+.source "Proguard"
+
+
+# virtual methods
+.method public abstract zzb(Ljava/lang/Class;)Lcom/google/android/gms/internal/ads/zzhaa;
+.end method
+
+.method public abstract zzc(Ljava/lang/Class;)Z
+.end method

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/rootView" android:background="@drawable/bg_home_widget_recommend_series" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_home_widget_recommend_series" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:background="@drawable/bg_home_widget_recommend_series_title" android:layout_width="match_parent" android:layout_height="30dp"/>
+        <LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_home_widget_search_content" android:layout_width="match_parent" android:layout_height="50dp" android:paddingStart="15dp" android:paddingEnd="15dp" android:layout_marginStart="17dp" android:layout_marginEnd="17dp">
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@mipmap/ic_launcher"/>
+            <TextView android:textSize="15sp" android:textColor="#787878" android:ellipsize="end" android:id="@+id/search_hint_view" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/widget_enter" android:maxLines="1" android:layout_weight="1" android:paddingStart="5dp" android:paddingEnd="5dp"/>
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_home_widget_search"/>
+        </LinearLayout>
+        <TextView android:textSize="15sp" android:textColor="#000000" android:ellipsize="end" android:id="@+id/searchRecommend1" android:paddingTop="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="《Against Dark belly All OddsAgainst》" android:maxLines="1" android:drawablePadding="3dp" android:drawableStart="@drawable/ic_home_widget_hot" android:paddingEnd="10dp" android:layout_marginStart="27dp"/>
+        <TextView android:textSize="15sp" android:textColor="#000000" android:ellipsize="end" android:id="@+id/searchRecommend2" android:paddingTop="14dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="《Against Dark belly All OddsAgainst》" android:maxLines="1" android:drawablePadding="3dp" android:drawableStart="@drawable/ic_home_widget_hot" android:paddingEnd="10dp" android:layout_marginStart="27dp"/>
+        <TextView android:textSize="14sp" android:textColor="#000000" android:gravity="center" android:id="@+id/noContentTextView" android:layout_width="match_parent" android:layout_height="100dp" android:text="@string/widget_null"/>
+    </LinearLayout>
+</LinearLayout>

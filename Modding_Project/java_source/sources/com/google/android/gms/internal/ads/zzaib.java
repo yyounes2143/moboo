@@ -1,0 +1,128 @@
+package com.google.android.gms.internal.ads;
+
+import androidx.annotation.Nullable;
+import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
+/* compiled from: Proguard */
+/* loaded from: classes4.dex */
+final class zzaib implements zzahy {
+    private final long zza;
+    private final int zzb;
+    private final long zzc;
+    private final int zzd;
+    private final long zze;
+    private final long zzf;
+    @Nullable
+    private final long[] zzg;
+
+    private zzaib(long j, int i, long j2, int i2, long j3, @Nullable long[] jArr) {
+        this.zza = j;
+        this.zzb = i;
+        this.zzc = j2;
+        this.zzd = i2;
+        this.zze = j3;
+        this.zzg = jArr;
+        this.zzf = j3 != -1 ? j + j3 : -1L;
+    }
+
+    @Nullable
+    public static zzaib zzb(zzaia zzaiaVar, long j) {
+        long zza = zzaiaVar.zza();
+        if (zza == -9223372036854775807L) {
+            return null;
+        }
+        zzaef zzaefVar = zzaiaVar.zza;
+        return new zzaib(j, zzaefVar.zzc, zza, zzaefVar.zzf, zzaiaVar.zzc, zzaiaVar.zzf);
+    }
+
+    private final long zzf(int i) {
+        return (this.zzc * i) / 100;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzaem
+    public final long zza() {
+        return this.zzc;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzahy
+    public final int zzc() {
+        return this.zzd;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzahy
+    public final long zzd() {
+        return this.zzf;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzahy
+    public final long zze(long j) {
+        long j2;
+        double d;
+        if (zzh()) {
+            long j3 = j - this.zza;
+            if (j3 > this.zzb) {
+                long[] jArr = this.zzg;
+                zzdc.zzb(jArr);
+                double d2 = (j3 * 256.0d) / this.zze;
+                int zzd = zzeu.zzd(jArr, (long) d2, true, true);
+                long zzf = zzf(zzd);
+                long j4 = jArr[zzd];
+                int i = zzd + 1;
+                long zzf2 = zzf(i);
+                if (zzd == 99) {
+                    j2 = 256;
+                } else {
+                    j2 = jArr[i];
+                }
+                if (j4 == j2) {
+                    d = FirebaseRemoteConfig.DEFAULT_VALUE_FOR_DOUBLE;
+                } else {
+                    d = (d2 - j4) / (j2 - j4);
+                }
+                return zzf + Math.round(d * (zzf2 - zzf));
+            }
+            return 0L;
+        }
+        return 0L;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzaem
+    public final zzaek zzg(long j) {
+        double d;
+        if (!zzh()) {
+            zzaen zzaenVar = new zzaen(0L, this.zza + this.zzb);
+            return new zzaek(zzaenVar, zzaenVar);
+        }
+        long j2 = this.zzc;
+        String str = zzeu.zza;
+        long max = Math.max(0L, Math.min(j, j2));
+        double d2 = (max * 100.0d) / j2;
+        double d3 = FirebaseRemoteConfig.DEFAULT_VALUE_FOR_DOUBLE;
+        if (d2 > FirebaseRemoteConfig.DEFAULT_VALUE_FOR_DOUBLE) {
+            if (d2 >= 100.0d) {
+                d3 = 256.0d;
+            } else {
+                int i = (int) d2;
+                long[] jArr = this.zzg;
+                zzdc.zzb(jArr);
+                double d4 = jArr[i];
+                if (i == 99) {
+                    d = 256.0d;
+                } else {
+                    d = jArr[i + 1];
+                }
+                d3 = d4 + ((d2 - i) * (d - d4));
+            }
+        }
+        long j3 = this.zze;
+        zzaen zzaenVar2 = new zzaen(max, this.zza + Math.max(this.zzb, Math.min(Math.round((d3 / 256.0d) * j3), j3 - 1)));
+        return new zzaek(zzaenVar2, zzaenVar2);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzaem
+    public final boolean zzh() {
+        if (this.zzg != null) {
+            return true;
+        }
+        return false;
+    }
+}

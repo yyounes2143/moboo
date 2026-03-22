@@ -1,0 +1,203 @@
+package com.vungle.ads.internal.util;
+
+import android.os.CountDownTimer;
+import androidx.annotation.VisibleForTesting;
+import androidx.constraintlayout.core.motion.utils.TypedValues;
+import com.mbridge.msdk.foundation.entity.CampaignEx;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+/* compiled from: Proguard */
+@Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0006\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\t\n\u0002\b\u0018\n\u0002\u0018\u0002\n\u0002\b\r\b\u0000\u0018\u00002\u00020\u0001B3\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u000e\b\u0002\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007\u0012\f\u0010\t\u001a\b\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\u0002\u0010\nJ\u0006\u0010+\u001a\u00020\bJ\u0010\u0010,\u001a\u00020%2\u0006\u0010-\u001a\u00020\fH\u0002J\u0006\u0010.\u001a\u00020\bJ\u0006\u0010/\u001a\u00020\bJ\u0006\u00100\u001a\u00020\bJ\u0006\u00101\u001a\u00020\bR\u0014\u0010\u000b\u001a\u00020\f8BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\r\u0010\u000eR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u000f\u001a\u00020\f8@X\u0081\u0004¢\u0006\f\u0012\u0004\b\u0010\u0010\u0011\u001a\u0004\b\u0012\u0010\u000eR\u0014\u0010\u0013\u001a\u00020\u00038BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u0014\u0010\u0015R\u000e\u0010\u0016\u001a\u00020\u0005X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0005X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0018\u001a\u00020\f8BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u0019\u0010\u000eR$\u0010\u001a\u001a\u00020\u00038\u0000@\u0000X\u0081\u000e¢\u0006\u0014\n\u0000\u0012\u0004\b\u001b\u0010\u0011\u001a\u0004\b\u001c\u0010\u0015\"\u0004\b\u001d\u0010\u001eR\u0014\u0010\t\u001a\b\u0012\u0004\u0012\u00020\b0\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R$\u0010\u001f\u001a\u00020\f8\u0000@\u0000X\u0081\u000e¢\u0006\u0014\n\u0000\u0012\u0004\b \u0010\u0011\u001a\u0004\b!\u0010\u000e\"\u0004\b\"\u0010#R&\u0010$\u001a\u0004\u0018\u00010%8\u0000@\u0000X\u0081\u000e¢\u0006\u0014\n\u0000\u0012\u0004\b&\u0010\u0011\u001a\u0004\b'\u0010(\"\u0004\b)\u0010*¨\u00062"}, d2 = {"Lcom/vungle/ads/internal/util/SuspendableTimer;", "", "durationSecs", "", "repeats", "", "onTick", "Lkotlin/Function0;", "", "onFinish", "(DZLkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V", "durationMillis", "", "getDurationMillis", "()J", "elapsedMillis", "getElapsedMillis$vungle_ads_release$annotations", "()V", "getElapsedMillis$vungle_ads_release", "elapsedSecs", "getElapsedSecs", "()D", "isCanceled", "isPaused", "nextDurationMillis", "getNextDurationMillis", "nextDurationSecs", "getNextDurationSecs$vungle_ads_release$annotations", "getNextDurationSecs$vungle_ads_release", "setNextDurationSecs$vungle_ads_release", "(D)V", "startTimeMillis", "getStartTimeMillis$vungle_ads_release$annotations", "getStartTimeMillis$vungle_ads_release", "setStartTimeMillis$vungle_ads_release", "(J)V", "timer", "Landroid/os/CountDownTimer;", "getTimer$vungle_ads_release$annotations", "getTimer$vungle_ads_release", "()Landroid/os/CountDownTimer;", "setTimer$vungle_ads_release", "(Landroid/os/CountDownTimer;)V", "cancel", "createCountdown", TypedValues.TransitionType.S_DURATION, CampaignEx.JSON_NATIVE_VIDEO_PAUSE, "reset", CampaignEx.JSON_NATIVE_VIDEO_RESUME, "start", "vungle-ads_release"}, k = 1, mv = {1, 7, 1}, xi = 48)
+/* loaded from: classes6.dex */
+public final class SuspendableTimer {
+    private final double durationSecs;
+    private boolean isCanceled;
+    private boolean isPaused;
+    private double nextDurationSecs;
+    @NotNull
+    private final Function0<Unit> onFinish;
+    @NotNull
+    private final Function0<Unit> onTick;
+    private final boolean repeats;
+    private long startTimeMillis;
+    @Nullable
+    private CountDownTimer timer;
+
+    public SuspendableTimer(double d, boolean z, @NotNull Function0<Unit> function0, @NotNull Function0<Unit> function02) {
+        this.durationSecs = d;
+        this.repeats = z;
+        this.onTick = function0;
+        this.onFinish = function02;
+        this.nextDurationSecs = d;
+    }
+
+    private final CountDownTimer createCountdown(final long j) {
+        return new CountDownTimer(j, this) { // from class: com.vungle.ads.internal.util.SuspendableTimer$createCountdown$1
+            final /* synthetic */ SuspendableTimer this$0;
+
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            {
+                super(j, j);
+                this.this$0 = this;
+            }
+
+            @Override // android.os.CountDownTimer
+            public void onFinish() {
+                Function0 function0;
+                boolean z;
+                boolean z2;
+                double d;
+                SuspendableTimer suspendableTimer = this.this$0;
+                function0 = suspendableTimer.onFinish;
+                function0.invoke();
+                z = suspendableTimer.repeats;
+                if (z) {
+                    z2 = suspendableTimer.isCanceled;
+                    if (!z2) {
+                        d = suspendableTimer.durationSecs;
+                        suspendableTimer.setNextDurationSecs$vungle_ads_release(d);
+                        suspendableTimer.start();
+                        return;
+                    }
+                }
+                suspendableTimer.cancel();
+            }
+
+            @Override // android.os.CountDownTimer
+            public void onTick(long j2) {
+                Function0 function0;
+                function0 = this.this$0.onTick;
+                function0.invoke();
+            }
+        };
+    }
+
+    private final long getDurationMillis() {
+        return (long) (this.durationSecs * 1000);
+    }
+
+    private final double getElapsedSecs() {
+        return getElapsedMillis$vungle_ads_release() / 1000;
+    }
+
+    private final long getNextDurationMillis() {
+        return (long) (this.nextDurationSecs * 1000);
+    }
+
+    public final void cancel() {
+        this.isPaused = false;
+        this.isCanceled = true;
+        CountDownTimer countDownTimer = this.timer;
+        if (countDownTimer != null) {
+            countDownTimer.cancel();
+        }
+        this.timer = null;
+    }
+
+    public final long getElapsedMillis$vungle_ads_release() {
+        long currentTimeMillis;
+        long j;
+        if (this.isPaused) {
+            currentTimeMillis = getDurationMillis();
+            j = getNextDurationMillis();
+        } else {
+            currentTimeMillis = System.currentTimeMillis();
+            j = this.startTimeMillis;
+        }
+        return currentTimeMillis - j;
+    }
+
+    public final double getNextDurationSecs$vungle_ads_release() {
+        return this.nextDurationSecs;
+    }
+
+    public final long getStartTimeMillis$vungle_ads_release() {
+        return this.startTimeMillis;
+    }
+
+    @Nullable
+    public final CountDownTimer getTimer$vungle_ads_release() {
+        return this.timer;
+    }
+
+    public final void pause() {
+        if (this.timer == null) {
+            return;
+        }
+        this.nextDurationSecs -= getElapsedSecs();
+        this.isPaused = true;
+        CountDownTimer countDownTimer = this.timer;
+        if (countDownTimer != null) {
+            countDownTimer.cancel();
+        }
+        this.timer = null;
+    }
+
+    public final void reset() {
+        cancel();
+        start();
+    }
+
+    public final void resume() {
+        if (!this.isPaused) {
+            return;
+        }
+        this.isPaused = false;
+        start();
+    }
+
+    public final void setNextDurationSecs$vungle_ads_release(double d) {
+        this.nextDurationSecs = d;
+    }
+
+    public final void setStartTimeMillis$vungle_ads_release(long j) {
+        this.startTimeMillis = j;
+    }
+
+    public final void setTimer$vungle_ads_release(@Nullable CountDownTimer countDownTimer) {
+        this.timer = countDownTimer;
+    }
+
+    public final void start() {
+        this.startTimeMillis = System.currentTimeMillis();
+        CountDownTimer createCountdown = createCountdown(getNextDurationMillis());
+        this.timer = createCountdown;
+        if (createCountdown != null) {
+            createCountdown.start();
+        }
+    }
+
+    public /* synthetic */ SuspendableTimer(double d, boolean z, Function0 function0, Function0 function02, int i, DefaultConstructorMarker defaultConstructorMarker) {
+        this(d, z, (i & 4) != 0 ? new Function0<Unit>() { // from class: com.vungle.ads.internal.util.SuspendableTimer.1
+            /* renamed from: invoke  reason: avoid collision after fix types in other method */
+            public final void invoke2() {
+            }
+
+            @Override // kotlin.jvm.functions.Function0
+            public /* bridge */ /* synthetic */ Unit invoke() {
+                invoke2();
+                return Unit.INSTANCE;
+            }
+        } : function0, function02);
+    }
+
+    @VisibleForTesting
+    public static /* synthetic */ void getElapsedMillis$vungle_ads_release$annotations() {
+    }
+
+    @VisibleForTesting
+    public static /* synthetic */ void getNextDurationSecs$vungle_ads_release$annotations() {
+    }
+
+    @VisibleForTesting
+    public static /* synthetic */ void getStartTimeMillis$vungle_ads_release$annotations() {
+    }
+
+    @VisibleForTesting
+    public static /* synthetic */ void getTimer$vungle_ads_release$annotations() {
+    }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxWidth="276dp" android:maxHeight="116dp">
+    <TextView android:textSize="11sp" android:id="@+id/notificationHintText" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextAppearance.Compat.Notification.Line2"/>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_local_activity_continue_series_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+        <LinearLayout android:orientation="vertical" android:paddingTop="12dp" android:layout_width="0dp" android:layout_height="101dp" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="14dp"/>
+            <TextView android:textSize="10sp" android:textColor="#ccffffff" android:ellipsize="end" android:id="@+id/content" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:paddingStart="14dp"/>
+            <ProgressBar android:id="@+id/progressBar" android:layout_width="match_parent" android:layout_height="4dp" android:layout_marginTop="7dp" android:indeterminate="false" android:progressDrawable="@drawable/custom_progress" android:layout_marginStart="14dp" style="@android:style/Widget.ProgressBar.Horizontal"/>
+            <LinearLayout android:gravity="center" android:paddingTop="11dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="17dp" android:layout_height="wrap_content" android:src="@drawable/ic_local_activity_continue_start"/>
+                <ImageView android:layout_width="18dp" android:layout_height="16dp" android:src="@drawable/ic_local_activity_continue_center" android:layout_marginStart="36dp" android:layout_marginEnd="36dp"/>
+                <ImageView android:layout_width="17dp" android:layout_height="wrap_content" android:src="@drawable/ic_local_activity_continue_end"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/endImageView" android:visibility="visible" android:layout_width="54dp" android:layout_height="71dp" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_marginStart="11dp" android:layout_marginEnd="8dp"/>
+    </LinearLayout>
+</LinearLayout>

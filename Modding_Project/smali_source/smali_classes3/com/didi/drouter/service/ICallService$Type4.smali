@@ -1,0 +1,41 @@
+.class public interface abstract Lcom/didi/drouter/service/ICallService$Type4;
+.super Ljava/lang/Object;
+.source "Proguard"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/didi/drouter/service/ICallService;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "Type4"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<Param1:",
+        "Ljava/lang/Object;",
+        "Param2:",
+        "Ljava/lang/Object;",
+        "Param3:",
+        "Ljava/lang/Object;",
+        "Param4:",
+        "Ljava/lang/Object;",
+        "Result:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract Wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TParam1;TParam2;TParam3;TParam4;)TResult;"
+        }
+    .end annotation
+.end method

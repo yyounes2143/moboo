@@ -1,0 +1,5 @@
+package com.facebook.ads;
+/* compiled from: Proguard */
+/* loaded from: classes3.dex */
+public final /* synthetic */ class Wwwwwwwwwwwwwwwwwwwwwwwwwwwww {
+}

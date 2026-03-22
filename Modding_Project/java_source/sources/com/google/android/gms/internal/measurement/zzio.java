@@ -1,0 +1,17 @@
+package com.google.android.gms.internal.measurement;
+/* compiled from: Proguard */
+/* loaded from: classes4.dex */
+final class zzio implements zzmk {
+    static final zzmk zza = new zzio();
+
+    private zzio() {
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzmk
+    public final boolean zza(int i) {
+        if (zzip.zza(i) != 0) {
+            return true;
+        }
+        return false;
+    }
+}

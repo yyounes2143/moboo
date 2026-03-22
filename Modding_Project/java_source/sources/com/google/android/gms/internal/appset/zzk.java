@@ -1,0 +1,11 @@
+package com.google.android.gms.internal.appset;
+
+import androidx.annotation.VisibleForTesting;
+/* compiled from: Proguard */
+@VisibleForTesting
+/* loaded from: classes4.dex */
+final class zzk extends Exception {
+    public zzk(String str) {
+        super(str);
+    }
+}

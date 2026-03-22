@@ -1,0 +1,11 @@
+package kotlin.collections;
+
+import java.util.Arrays;
+import java.util.List;
+/* compiled from: Proguard */
+/* loaded from: classes6.dex */
+class ArraysUtilJVM {
+    public static <T> List<T> asList(T[] tArr) {
+        return Arrays.asList(tArr);
+    }
+}

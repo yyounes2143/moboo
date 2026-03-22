@@ -1,0 +1,101 @@
+.class public final synthetic Lcom/google/common/collect/QQOOOOOOOO;
+.super Ljava/lang/Object;
+.source "Proguard"
+
+# interfaces
+.implements Ljava/util/function/BiConsumer;
+
+
+# instance fields
+.field public final synthetic Wwwwwwwwwwwwwwwwwwwwwwwwwwwwwww:Ljava/util/function/BinaryOperator;
+
+.field public final synthetic Wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww:Ljava/util/function/Function;
+
+.field public final synthetic Wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww:Ljava/util/function/Function;
+
+.field public final synthetic Wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww:Ljava/util/function/Function;
+
+
+# direct methods
+.method public synthetic constructor <init>(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/BinaryOperator;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/google/common/collect/QQOOOOOOOO;->Wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww:Ljava/util/function/Function;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lcom/google/common/collect/QQOOOOOOOO;->Wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww:Ljava/util/function/Function;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, Lcom/google/common/collect/QQOOOOOOOO;->Wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww:Ljava/util/function/Function;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, Lcom/google/common/collect/QQOOOOOOOO;->Wwwwwwwwwwwwwwwwwwwwwwwwwwwwwww:Ljava/util/function/BinaryOperator;
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 6
+
+    .line 1
+    iget-object v0, p0, Lcom/google/common/collect/QQOOOOOOOO;->Wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww:Ljava/util/function/Function;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lcom/google/common/collect/QQOOOOOOOO;->Wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww:Ljava/util/function/Function;
+
+    .line 4
+    .line 5
+    iget-object v2, p0, Lcom/google/common/collect/QQOOOOOOOO;->Wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww:Ljava/util/function/Function;
+
+    .line 6
+    .line 7
+    iget-object v3, p0, Lcom/google/common/collect/QQOOOOOOOO;->Wwwwwwwwwwwwwwwwwwwwwwwwwwwwwww:Ljava/util/function/BinaryOperator;
+
+    .line 8
+    .line 9
+    move-object v4, p1
+
+    .line 10
+    check-cast v4, Lcom/google/common/collect/TableCollectors$ImmutableTableCollectorState;
+
+    .line 11
+    .line 12
+    move-object v5, p2
+
+    .line 13
+    invoke-static/range {v0 .. v5}, Lcom/google/common/collect/TableCollectors;->Wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/BinaryOperator;Lcom/google/common/collect/TableCollectors$ImmutableTableCollectorState;Ljava/lang/Object;)V
+
+    .line 14
+    .line 15
+    .line 16
+    return-void
+.end method
+
+.method public synthetic andThen(Ljava/util/function/BiConsumer;)Ljava/util/function/BiConsumer;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Lj$/util/function/BiConsumer$-CC;->$default$andThen(Ljava/util/function/BiConsumer;Ljava/util/function/BiConsumer;)Ljava/util/function/BiConsumer;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method

@@ -1,0 +1,144 @@
+package gatewayprotocol.v1;
+
+import com.google.protobuf.kotlin.ProtoDslMarker;
+import gatewayprotocol.v1.NativeConfigurationOuterClass;
+import kotlin.Metadata;
+import kotlin.PublishedApi;
+import kotlin.jvm.JvmName;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import org.jetbrains.annotations.NotNull;
+/* compiled from: Proguard */
+@Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001:\u0001\u0003B\u0007\b\u0002¢\u0006\u0002\u0010\u0002¨\u0006\u0004"}, d2 = {"Lgatewayprotocol/v1/RequestRetryPolicyKt;", "", "()V", "Dsl", "unity-ads_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+/* loaded from: classes6.dex */
+public final class RequestRetryPolicyKt {
+    @NotNull
+    public static final RequestRetryPolicyKt INSTANCE = new RequestRetryPolicyKt();
+
+    /* compiled from: Proguard */
+    @Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u0007\n\u0002\b\u000e\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0007\b\u0007\u0018\u0000 *2\u00020\u0001:\u0001*B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010!\u001a\u00020\"H\u0001J\u0006\u0010#\u001a\u00020$J\u0006\u0010%\u001a\u00020$J\u0006\u0010&\u001a\u00020$J\u0006\u0010'\u001a\u00020$J\u0006\u0010(\u001a\u00020$J\u0006\u0010)\u001a\u00020$R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R$\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0005\u001a\u00020\u00068G@GX\u0086\u000e¢\u0006\f\u001a\u0004\b\b\u0010\t\"\u0004\b\n\u0010\u000bR$\u0010\r\u001a\u00020\f2\u0006\u0010\u0005\u001a\u00020\f8G@GX\u0086\u000e¢\u0006\f\u001a\u0004\b\u000e\u0010\u000f\"\u0004\b\u0010\u0010\u0011R$\u0010\u0012\u001a\u00020\u00062\u0006\u0010\u0005\u001a\u00020\u00068G@GX\u0086\u000e¢\u0006\f\u001a\u0004\b\u0013\u0010\t\"\u0004\b\u0014\u0010\u000bR$\u0010\u0015\u001a\u00020\f2\u0006\u0010\u0005\u001a\u00020\f8G@GX\u0086\u000e¢\u0006\f\u001a\u0004\b\u0016\u0010\u000f\"\u0004\b\u0017\u0010\u0011R$\u0010\u0018\u001a\u00020\u00062\u0006\u0010\u0005\u001a\u00020\u00068G@GX\u0086\u000e¢\u0006\f\u001a\u0004\b\u0019\u0010\t\"\u0004\b\u001a\u0010\u000bR$\u0010\u001c\u001a\u00020\u001b2\u0006\u0010\u0005\u001a\u00020\u001b8G@GX\u0086\u000e¢\u0006\f\u001a\u0004\b\u001d\u0010\u001e\"\u0004\b\u001f\u0010 ¨\u0006+"}, d2 = {"Lgatewayprotocol/v1/RequestRetryPolicyKt$Dsl;", "", "_builder", "Lgatewayprotocol/v1/NativeConfigurationOuterClass$RequestRetryPolicy$Builder;", "(Lgatewayprotocol/v1/NativeConfigurationOuterClass$RequestRetryPolicy$Builder;)V", "value", "", "maxDuration", "getMaxDuration", "()I", "setMaxDuration", "(I)V", "", "retryJitterPct", "getRetryJitterPct", "()F", "setRetryJitterPct", "(F)V", "retryMaxInterval", "getRetryMaxInterval", "setRetryMaxInterval", "retryScalingFactor", "getRetryScalingFactor", "setRetryScalingFactor", "retryWaitBase", "getRetryWaitBase", "setRetryWaitBase", "", "shouldStoreLocally", "getShouldStoreLocally", "()Z", "setShouldStoreLocally", "(Z)V", "_build", "Lgatewayprotocol/v1/NativeConfigurationOuterClass$RequestRetryPolicy;", "clearMaxDuration", "", "clearRetryJitterPct", "clearRetryMaxInterval", "clearRetryScalingFactor", "clearRetryWaitBase", "clearShouldStoreLocally", "Companion", "unity-ads_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    @ProtoDslMarker
+    /* loaded from: classes6.dex */
+    public static final class Dsl {
+        @NotNull
+        public static final Companion Companion = new Companion(null);
+        @NotNull
+        private final NativeConfigurationOuterClass.RequestRetryPolicy.Builder _builder;
+
+        /* compiled from: Proguard */
+        @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0010\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006H\u0001¨\u0006\u0007"}, d2 = {"Lgatewayprotocol/v1/RequestRetryPolicyKt$Dsl$Companion;", "", "()V", "_create", "Lgatewayprotocol/v1/RequestRetryPolicyKt$Dsl;", "builder", "Lgatewayprotocol/v1/NativeConfigurationOuterClass$RequestRetryPolicy$Builder;", "unity-ads_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+        /* loaded from: classes6.dex */
+        public static final class Companion {
+            public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+                this();
+            }
+
+            @PublishedApi
+            public final /* synthetic */ Dsl _create(NativeConfigurationOuterClass.RequestRetryPolicy.Builder builder) {
+                return new Dsl(builder, null);
+            }
+
+            private Companion() {
+            }
+        }
+
+        public /* synthetic */ Dsl(NativeConfigurationOuterClass.RequestRetryPolicy.Builder builder, DefaultConstructorMarker defaultConstructorMarker) {
+            this(builder);
+        }
+
+        @PublishedApi
+        public final /* synthetic */ NativeConfigurationOuterClass.RequestRetryPolicy _build() {
+            return this._builder.build();
+        }
+
+        public final void clearMaxDuration() {
+            this._builder.clearMaxDuration();
+        }
+
+        public final void clearRetryJitterPct() {
+            this._builder.clearRetryJitterPct();
+        }
+
+        public final void clearRetryMaxInterval() {
+            this._builder.clearRetryMaxInterval();
+        }
+
+        public final void clearRetryScalingFactor() {
+            this._builder.clearRetryScalingFactor();
+        }
+
+        public final void clearRetryWaitBase() {
+            this._builder.clearRetryWaitBase();
+        }
+
+        public final void clearShouldStoreLocally() {
+            this._builder.clearShouldStoreLocally();
+        }
+
+        @JvmName(name = "getMaxDuration")
+        public final int getMaxDuration() {
+            return this._builder.getMaxDuration();
+        }
+
+        @JvmName(name = "getRetryJitterPct")
+        public final float getRetryJitterPct() {
+            return this._builder.getRetryJitterPct();
+        }
+
+        @JvmName(name = "getRetryMaxInterval")
+        public final int getRetryMaxInterval() {
+            return this._builder.getRetryMaxInterval();
+        }
+
+        @JvmName(name = "getRetryScalingFactor")
+        public final float getRetryScalingFactor() {
+            return this._builder.getRetryScalingFactor();
+        }
+
+        @JvmName(name = "getRetryWaitBase")
+        public final int getRetryWaitBase() {
+            return this._builder.getRetryWaitBase();
+        }
+
+        @JvmName(name = "getShouldStoreLocally")
+        public final boolean getShouldStoreLocally() {
+            return this._builder.getShouldStoreLocally();
+        }
+
+        @JvmName(name = "setMaxDuration")
+        public final void setMaxDuration(int i) {
+            this._builder.setMaxDuration(i);
+        }
+
+        @JvmName(name = "setRetryJitterPct")
+        public final void setRetryJitterPct(float f) {
+            this._builder.setRetryJitterPct(f);
+        }
+
+        @JvmName(name = "setRetryMaxInterval")
+        public final void setRetryMaxInterval(int i) {
+            this._builder.setRetryMaxInterval(i);
+        }
+
+        @JvmName(name = "setRetryScalingFactor")
+        public final void setRetryScalingFactor(float f) {
+            this._builder.setRetryScalingFactor(f);
+        }
+
+        @JvmName(name = "setRetryWaitBase")
+        public final void setRetryWaitBase(int i) {
+            this._builder.setRetryWaitBase(i);
+        }
+
+        @JvmName(name = "setShouldStoreLocally")
+        public final void setShouldStoreLocally(boolean z) {
+            this._builder.setShouldStoreLocally(z);
+        }
+
+        private Dsl(NativeConfigurationOuterClass.RequestRetryPolicy.Builder builder) {
+            this._builder = builder;
+        }
+    }
+
+    private RequestRetryPolicyKt() {
+    }
+}

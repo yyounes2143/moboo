@@ -1,0 +1,83 @@
+package io.flutter.plugins.videoplayer;
+
+import io.flutter.plugin.common.EventChannel;
+import java.util.ArrayList;
+/* compiled from: Proguard */
+/* loaded from: classes6.dex */
+final class QueuingEventSink implements EventChannel.EventSink {
+    private EventChannel.EventSink delegate;
+    private final ArrayList<Object> eventQueue = new ArrayList<>();
+    private boolean done = false;
+
+    /* compiled from: Proguard */
+    /* loaded from: classes6.dex */
+    public static class EndOfStreamEvent {
+    }
+
+    /* compiled from: Proguard */
+    /* loaded from: classes6.dex */
+    public static class ErrorEvent {
+        String code;
+        Object details;
+        String message;
+
+        public ErrorEvent(String str, String str2, Object obj) {
+            this.code = str;
+            this.message = str2;
+            this.details = obj;
+        }
+    }
+
+    private void enqueue(Object obj) {
+        if (this.done) {
+            return;
+        }
+        this.eventQueue.add(obj);
+    }
+
+    private void maybeFlush() {
+        if (this.delegate == null) {
+            return;
+        }
+        ArrayList<Object> arrayList = this.eventQueue;
+        int size = arrayList.size();
+        int i = 0;
+        while (i < size) {
+            Object obj = arrayList.get(i);
+            i++;
+            if (obj instanceof EndOfStreamEvent) {
+                this.delegate.endOfStream();
+            } else if (obj instanceof ErrorEvent) {
+                ErrorEvent errorEvent = (ErrorEvent) obj;
+                this.delegate.error(errorEvent.code, errorEvent.message, errorEvent.details);
+            } else {
+                this.delegate.success(obj);
+            }
+        }
+        this.eventQueue.clear();
+    }
+
+    @Override // io.flutter.plugin.common.EventChannel.EventSink
+    public void endOfStream() {
+        enqueue(new EndOfStreamEvent());
+        maybeFlush();
+        this.done = true;
+    }
+
+    @Override // io.flutter.plugin.common.EventChannel.EventSink
+    public void error(String str, String str2, Object obj) {
+        enqueue(new ErrorEvent(str, str2, obj));
+        maybeFlush();
+    }
+
+    public void setDelegate(EventChannel.EventSink eventSink) {
+        this.delegate = eventSink;
+        maybeFlush();
+    }
+
+    @Override // io.flutter.plugin.common.EventChannel.EventSink
+    public void success(Object obj) {
+        enqueue(obj);
+        maybeFlush();
+    }
+}

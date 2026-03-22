@@ -1,0 +1,21 @@
+package androidx.webkit.internal;
+
+import android.webkit.ServiceWorkerClient;
+import android.webkit.WebResourceRequest;
+import android.webkit.WebResourceResponse;
+import androidx.annotation.RequiresApi;
+import androidx.webkit.ServiceWorkerClientCompat;
+/* compiled from: Proguard */
+@RequiresApi(24)
+/* loaded from: classes3.dex */
+public class FrameworkServiceWorkerClient extends ServiceWorkerClient {
+    private final ServiceWorkerClientCompat mImpl;
+
+    public FrameworkServiceWorkerClient(ServiceWorkerClientCompat serviceWorkerClientCompat) {
+        this.mImpl = serviceWorkerClientCompat;
+    }
+
+    public WebResourceResponse shouldInterceptRequest(WebResourceRequest webResourceRequest) {
+        return this.mImpl.shouldInterceptRequest(webResourceRequest);
+    }
+}

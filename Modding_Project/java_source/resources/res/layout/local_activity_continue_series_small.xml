@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg_local_activity_continue_series_small" android:scaleType="centerInside"/>
+    <LinearLayout android:orientation="vertical" android:paddingTop="6dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="46dp">
+        <TextView android:textSize="14sp" android:textStyle="bold" android:ellipsize="end" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/TextAppearance.Compat.Notification.Title"/>
+        <LinearLayout android:gravity="center" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="17dp" android:layout_height="wrap_content" android:src="@drawable/ic_local_activity_continue_start_theme"/>
+            <ImageView android:layout_width="17dp" android:layout_height="19dp" android:src="@drawable/ic_local_activity_continue_center_theme" android:layout_marginStart="36dp" android:layout_marginEnd="36dp"/>
+            <ImageView android:layout_width="17dp" android:layout_height="wrap_content" android:src="@drawable/ic_local_activity_continue_end_theme"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="end|center_vertical" android:id="@+id/endImageView" android:visibility="visible" android:layout_width="36dp" android:layout_height="48dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_marginStart="10dp"/>
+</FrameLayout>

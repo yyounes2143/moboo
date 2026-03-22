@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="116dp">
+    <ImageView android:id="@+id/bgImageView" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg_local_push_recall_large" android:scaleType="centerCrop"/>
+    <LinearLayout android:orientation="vertical" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="12dp" android:paddingEnd="12dp">
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/titleView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#ccffffff" android:ellipsize="end" android:id="@+id/contentView" android:paddingTop="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@+id/btnView" android:background="@drawable/bg_local_push_recall_btn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+    </LinearLayout>
+</FrameLayout>

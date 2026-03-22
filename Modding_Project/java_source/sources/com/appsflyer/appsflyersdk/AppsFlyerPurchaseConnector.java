@@ -1,0 +1,23 @@
+package com.appsflyer.appsflyersdk;
+
+import io.flutter.embedding.engine.plugins.FlutterPlugin;
+import kotlin.Metadata;
+import org.jetbrains.annotations.NotNull;
+/* compiled from: Proguard */
+@Metadata(d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u0010\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016J\u0010\u0010\b\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016¨\u0006\t"}, d2 = {"Lcom/appsflyer/appsflyersdk/AppsFlyerPurchaseConnector;", "Lio/flutter/embedding/engine/plugins/FlutterPlugin;", "<init>", "()V", "onAttachedToEngine", "", "binding", "Lio/flutter/embedding/engine/plugins/FlutterPlugin$FlutterPluginBinding;", "onDetachedFromEngine", "appsflyer_sdk_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+/* loaded from: classes3.dex */
+public final class AppsFlyerPurchaseConnector implements FlutterPlugin {
+    @NotNull
+    public static final AppsFlyerPurchaseConnector INSTANCE = new AppsFlyerPurchaseConnector();
+
+    private AppsFlyerPurchaseConnector() {
+    }
+
+    @Override // io.flutter.embedding.engine.plugins.FlutterPlugin
+    public void onAttachedToEngine(@NotNull FlutterPlugin.FlutterPluginBinding flutterPluginBinding) {
+    }
+
+    @Override // io.flutter.embedding.engine.plugins.FlutterPlugin
+    public void onDetachedFromEngine(@NotNull FlutterPlugin.FlutterPluginBinding flutterPluginBinding) {
+    }
+}

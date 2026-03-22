@@ -1,0 +1,16 @@
+package com.facebook.ads.redexgen.X;
+
+import android.media.MediaCodecInfo;
+/* renamed from: com.facebook.ads.redexgen.X.Aw  reason: case insensitive filesystem */
+/* loaded from: assets/audience_network.dex */
+public interface InterfaceC0527Aw {
+    int A7H();
+
+    MediaCodecInfo A7I(int i);
+
+    boolean AAI(String str, String str2, MediaCodecInfo.CodecCapabilities codecCapabilities);
+
+    boolean AAJ(String str, String str2, MediaCodecInfo.CodecCapabilities codecCapabilities);
+
+    boolean AIK();
+}

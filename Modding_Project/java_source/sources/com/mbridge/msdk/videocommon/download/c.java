@@ -1,0 +1,6 @@
+package com.mbridge.msdk.videocommon.download;
+/* compiled from: Proguard */
+/* loaded from: classes6.dex */
+public interface c {
+    void onProgress(long j, int i);
+}

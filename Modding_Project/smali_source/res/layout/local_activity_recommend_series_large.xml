@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_local_activity_recommend_series_large" android:layout_width="fill_parent" android:layout_height="116.0dip" android:maxWidth="276.0dip" android:maxHeight="116.0dip" android:paddingStart="11.0dip" android:paddingEnd="11.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top" android:id="@id/endImageView" android:visibility="visible" android:layout_width="54.0dip" android:layout_height="71.0dip" android:layout_marginTop="14.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_marginEnd="11.0dip" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="14.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffff2651" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/content" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" style="@style/TextAppearance.Compat.Notification.Line2" />
+        <FrameLayout android:background="@drawable/bg_local_activity_sign_in_btn" android:layout_width="fill_parent" android:layout_height="30.0dip">
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/btnView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="3.0dip" android:drawableStart="@drawable/ic_local_activity_play" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

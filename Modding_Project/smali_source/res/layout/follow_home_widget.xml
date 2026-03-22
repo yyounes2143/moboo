@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootView" android:background="@drawable/bg_home_widget_recommend_series" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_home_widget_recommend_series_title" android:layout_width="fill_parent" android:layout_height="45.0dip" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/ic_launcher" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff26252b" android:ellipsize="end" android:id="@id/titleView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/app_name" android:maxLines="1" android:layout_weight="1.0" android:textAlignment="viewStart" android:paddingStart="6.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/buttonGroup" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="10.0sp" android:textColor="#fff62355" android:gravity="center" android:id="@id/activeButton" android:background="@drawable/bg_home_widget_follow_button_active" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="@string/sign_in_now" android:drawablePadding="2.0dip" android:drawableStart="@drawable/ic_home_widget_sign_in" android:paddingStart="9.0dip" android:paddingEnd="9.0dip" />
+            <TextView android:textSize="10.0sp" android:textColor="#80f62355" android:gravity="center" android:id="@id/button" android:background="@drawable/bg_home_widget_follow_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="@string/widget_reward" android:drawablePadding="2.0dip" android:drawableStart="@drawable/ic_home_widget_cliamed" android:paddingStart="9.0dip" android:paddingEnd="9.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/seriesGroup" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="6.0dip" android:paddingEnd="6.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/series1View" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="4.0dip" android:paddingEnd="4.0dip">
+            <ImageView android:id="@id/imageView1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="11.0sp" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/nameView1" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/series2View" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="4.0dip" android:paddingEnd="4.0dip">
+            <ImageView android:id="@id/imageView2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="11.0sp" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/nameView2" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/series3View" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="4.0dip" android:paddingEnd="4.0dip">
+            <ImageView android:id="@id/imageView3" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="11.0sp" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/nameView3" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/series4View" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="4.0dip" android:paddingEnd="4.0dip">
+            <ImageView android:id="@id/imageView4" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="11.0sp" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/nameView4" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/noContentTextView" android:layout_width="fill_parent" android:layout_height="100.0dip" android:text="@string/widget_null" />
+</LinearLayout>

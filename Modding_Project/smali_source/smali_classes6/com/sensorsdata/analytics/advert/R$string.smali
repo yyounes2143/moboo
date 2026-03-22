@@ -1,0 +1,167 @@
+.class public final Lcom/sensorsdata/analytics/advert/R$string;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/sensorsdata/analytics/advert/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "string"
+.end annotation
+
+
+# static fields
+.field public static final sensors_analytics_ad_channel:I = 0x7f110275
+
+.field public static final sensors_analytics_ad_create_link_callback_missing:I = 0x7f110276
+
+.field public static final sensors_analytics_ad_create_link_channel_name_missing:I = 0x7f110277
+
+.field public static final sensors_analytics_ad_create_link_common_redirect_url_missing:I = 0x7f110278
+
+.field public static final sensors_analytics_ad_create_link_custom_url_error:I = 0x7f110279
+
+.field public static final sensors_analytics_ad_create_link_no_network:I = 0x7f11027a
+
+.field public static final sensors_analytics_ad_create_link_response_data_error:I = 0x7f11027b
+
+.field public static final sensors_analytics_ad_create_link_success:I = 0x7f11027c
+
+.field public static final sensors_analytics_ad_create_link_template_id_missing:I = 0x7f11027d
+
+.field public static final sensors_analytics_ad_create_link_token_missing:I = 0x7f11027e
+
+.field public static final sensors_analytics_ad_dialog_activate:I = 0x7f11027f
+
+.field public static final sensors_analytics_ad_dialog_cancel:I = 0x7f110280
+
+.field public static final sensors_analytics_ad_dialog_content:I = 0x7f110281
+
+.field public static final sensors_analytics_ad_dialog_ok:I = 0x7f110282
+
+.field public static final sensors_analytics_ad_dialog_starting:I = 0x7f110283
+
+.field public static final sensors_analytics_ad_dialog_title:I = 0x7f110284
+
+.field public static final sensors_analytics_ad_error_debug_fail_content:I = 0x7f110285
+
+.field public static final sensors_analytics_ad_error_debug_fail_title:I = 0x7f110286
+
+.field public static final sensors_analytics_ad_error_network:I = 0x7f110287
+
+.field public static final sensors_analytics_ad_error_project:I = 0x7f110288
+
+.field public static final sensors_analytics_ad_error_request:I = 0x7f110289
+
+.field public static final sensors_analytics_ad_error_retry:I = 0x7f11028a
+
+.field public static final sensors_analytics_ad_error_url:I = 0x7f11028b
+
+.field public static final sensors_analytics_ad_error_whitelist:I = 0x7f11028c
+
+.field public static final sensors_analytics_ad_listener:I = 0x7f11028d
+
+.field public static final sensors_analytics_ad_whitelist_platform_error:I = 0x7f11028e
+
+.field public static final sensors_analytics_ad_whitelist_project_error:I = 0x7f11028f
+
+.field public static final sensors_analytics_ad_whitelist_request_falied:I = 0x7f110290
+
+.field public static final sensors_analytics_ad_whitelist_request_success:I = 0x7f110291
+
+.field public static final sensors_analytics_carrier:I = 0x7f110292
+
+.field public static final sensors_analytics_carrier1:I = 0x7f110293
+
+.field public static final sensors_analytics_carrier2:I = 0x7f110294
+
+.field public static final sensors_analytics_carrier_mobile:I = 0x7f110295
+
+.field public static final sensors_analytics_carrier_satellite:I = 0x7f110296
+
+.field public static final sensors_analytics_carrier_telecom:I = 0x7f110297
+
+.field public static final sensors_analytics_carrier_tietong:I = 0x7f110298
+
+.field public static final sensors_analytics_carrier_unicom:I = 0x7f110299
+
+.field public static final sensors_analytics_carrier_unknown:I = 0x7f11029a
+
+.field public static final sensors_analytics_common_cancel:I = 0x7f11029b
+
+.field public static final sensors_analytics_common_continue:I = 0x7f11029c
+
+.field public static final sensors_analytics_common_no:I = 0x7f11029d
+
+.field public static final sensors_analytics_common_ok:I = 0x7f11029e
+
+.field public static final sensors_analytics_common_title:I = 0x7f11029f
+
+.field public static final sensors_analytics_debug_and_track:I = 0x7f1102a0
+
+.field public static final sensors_analytics_debug_name_default:I = 0x7f1102a1
+
+.field public static final sensors_analytics_debug_name_only:I = 0x7f1102a2
+
+.field public static final sensors_analytics_debug_name_track:I = 0x7f1102a3
+
+.field public static final sensors_analytics_debug_only:I = 0x7f1102a4
+
+.field public static final sensors_analytics_debug_tip_off:I = 0x7f1102a5
+
+.field public static final sensors_analytics_debug_tip_only:I = 0x7f1102a6
+
+.field public static final sensors_analytics_debug_tip_track:I = 0x7f1102a7
+
+.field public static final sensors_analytics_debug_view_title:I = 0x7f1102a8
+
+.field public static final sensors_analytics_heatmap_dialog_error:I = 0x7f1102b0
+
+.field public static final sensors_analytics_popwindow_fail:I = 0x7f1102b5
+
+.field public static final sensors_analytics_remote_config:I = 0x7f1102b6
+
+.field public static final sensors_analytics_remote_fail:I = 0x7f1102b7
+
+.field public static final sensors_analytics_remote_other_error:I = 0x7f1102b8
+
+.field public static final sensors_analytics_remote_succeed:I = 0x7f1102b9
+
+.field public static final sensors_analytics_remote_tip_error_appid:I = 0x7f1102ba
+
+.field public static final sensors_analytics_remote_tip_error_disable_network:I = 0x7f1102bb
+
+.field public static final sensors_analytics_remote_tip_error_disable_remote:I = 0x7f1102bc
+
+.field public static final sensors_analytics_remote_tip_error_network:I = 0x7f1102bd
+
+.field public static final sensors_analytics_remote_tip_error_os:I = 0x7f1102be
+
+.field public static final sensors_analytics_remote_tip_error_project:I = 0x7f1102bf
+
+.field public static final sensors_analytics_remote_tip_error_qrcode:I = 0x7f1102c0
+
+.field public static final sensors_analytics_remote_version_error:I = 0x7f1102c1
+
+.field public static final sensors_analytics_remote_version_tip:I = 0x7f1102c2
+
+.field public static final sensors_analytics_visual_code_loading:I = 0x7f1102c7
+
+.field public static final sensors_analytics_visual_dialog_error:I = 0x7f1102ca
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method

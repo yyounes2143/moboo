@@ -1,0 +1,35 @@
+package kotlinx.coroutines.channels;
+
+import com.google.firebase.analytics.FirebaseAnalytics;
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.jvm.internal.ContinuationImpl;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlinx.coroutines.channels.SendChannel;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+/* compiled from: Proguard */
+@Metadata(k = 3, mv = {2, 1, 0}, xi = 48)
+@DebugMetadata(c = "kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt", f = "Deprecated.kt", i = {0, 0, 1, 1}, l = {514, 272}, m = "filterNotNullTo", n = {FirebaseAnalytics.Param.DESTINATION, "$this$consume$iv$iv", FirebaseAnalytics.Param.DESTINATION, "$this$consume$iv$iv"}, s = {"L$0", "L$1", "L$0", "L$1"})
+/* loaded from: classes7.dex */
+public final class ChannelsKt__DeprecatedKt$filterNotNullTo$3<E, C extends SendChannel<? super E>> extends ContinuationImpl {
+    Object L$0;
+    Object L$1;
+    Object L$2;
+    int label;
+    /* synthetic */ Object result;
+
+    public ChannelsKt__DeprecatedKt$filterNotNullTo$3(Continuation<? super ChannelsKt__DeprecatedKt$filterNotNullTo$3> continuation) {
+        super(continuation);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    @Nullable
+    public final Object invokeSuspend(@NotNull Object obj) {
+        Object filterNotNullTo;
+        this.result = obj;
+        this.label |= Integer.MIN_VALUE;
+        filterNotNullTo = ChannelsKt__DeprecatedKt.filterNotNullTo((ReceiveChannel) null, (SendChannel) null, this);
+        return filterNotNullTo;
+    }
+}

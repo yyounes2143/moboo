@@ -1,0 +1,27 @@
+package com.google.android.gms.internal.measurement;
+/* compiled from: Proguard */
+/* loaded from: classes4.dex */
+final class zzlq {
+    private final Object zza;
+    private final int zzb;
+
+    public zzlq(Object obj, int i) {
+        this.zza = obj;
+        this.zzb = i;
+    }
+
+    public final boolean equals(Object obj) {
+        if (!(obj instanceof zzlq)) {
+            return false;
+        }
+        zzlq zzlqVar = (zzlq) obj;
+        if (this.zza != zzlqVar.zza || this.zzb != zzlqVar.zzb) {
+            return false;
+        }
+        return true;
+    }
+
+    public final int hashCode() {
+        return (System.identityHashCode(this.zza) * 65535) + this.zzb;
+    }
+}

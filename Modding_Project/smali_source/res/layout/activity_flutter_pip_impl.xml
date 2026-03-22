@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_pip_container" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tencent.rtmp.ui.TXCloudVideoView android:id="@id/tv_video_container" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:id="@id/pb_video_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="3.0dip" android:max="100" android:layout_alignParentBottom="true" style="@android:style/Widget.Holo.ProgressBar.Horizontal" />
+</RelativeLayout>

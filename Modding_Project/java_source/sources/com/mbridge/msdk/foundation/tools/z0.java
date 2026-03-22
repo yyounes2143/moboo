@@ -1,0 +1,71 @@
+package com.mbridge.msdk.foundation.tools;
+
+import android.net.Uri;
+import android.text.TextUtils;
+import android.webkit.URLUtil;
+import java.net.URL;
+/* compiled from: Proguard */
+/* loaded from: classes5.dex */
+public class z0 {
+    public static String a(String str) {
+        try {
+            return (TextUtils.isEmpty(str) || !URLUtil.isValidUrl(str)) ? "" : new URL(str).getHost();
+        } catch (Exception e) {
+            o0.b("UriUtil", e.getMessage());
+            return "";
+        }
+    }
+
+    public static String b(String str) {
+        try {
+            if (!TextUtils.isEmpty(str) && URLUtil.isValidUrl(str)) {
+                return new URL(str).getPath();
+            }
+            return str;
+        } catch (Exception e) {
+            o0.b("UriUtil", e.getMessage());
+            return "";
+        }
+    }
+
+    public static int c(String str) {
+        try {
+            if (!TextUtils.isEmpty(str)) {
+                if (URLUtil.isValidUrl(str) || e(str)) {
+                    return Uri.parse(str).getQueryParameterNames().size();
+                }
+                return 0;
+            }
+            return 0;
+        } catch (Exception e) {
+            o0.b("UriUtil", e.getMessage());
+            return 0;
+        }
+    }
+
+    public static String d(String str) {
+        try {
+            Uri parse = Uri.parse(str);
+            return parse.getScheme() + "://" + parse.getHost() + parse.getPath();
+        } catch (Exception e) {
+            o0.b("UriUtil", e.getMessage());
+            return "";
+        }
+    }
+
+    public static boolean e(String str) {
+        if (str == null || str.length() <= 5 || !str.substring(0, 6).equalsIgnoreCase("tcp://")) {
+            return false;
+        }
+        return true;
+    }
+
+    public static String a(String str, String str2) {
+        try {
+            return (TextUtils.isEmpty(str) || !URLUtil.isValidUrl(str)) ? str : Uri.parse(str).getQueryParameter(str2);
+        } catch (Exception e) {
+            o0.b("UriUtil", e.getMessage());
+            return "";
+        }
+    }
+}

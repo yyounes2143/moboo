@@ -1,0 +1,30 @@
+package com.unity3d.services.core.device.reader;
+
+import com.unity3d.services.core.device.Device;
+import java.util.Map;
+import kotlin.Metadata;
+import kotlin.jvm.internal.SourceDebugExtension;
+import org.jetbrains.annotations.NotNull;
+/* compiled from: Proguard */
+@Metadata(d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\u0010\u0000\n\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0001¢\u0006\u0002\u0010\u0003J\u0014\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00070\u0005H\u0016R\u000e\u0010\u0002\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\b"}, d2 = {"Lcom/unity3d/services/core/device/reader/DeviceInfoReaderWithAuid;", "Lcom/unity3d/services/core/device/reader/IDeviceInfoReader;", "_deviceInfoReader", "(Lcom/unity3d/services/core/device/reader/IDeviceInfoReader;)V", "getDeviceInfoData", "", "", "", "unity-ads_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@SourceDebugExtension({"SMAP\nDeviceInfoReaderWithAuid.kt\nKotlin\n*S Kotlin\n*F\n+ 1 DeviceInfoReaderWithAuid.kt\ncom/unity3d/services/core/device/reader/DeviceInfoReaderWithAuid\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,13:1\n1#2:14\n*E\n"})
+/* loaded from: classes6.dex */
+public final class DeviceInfoReaderWithAuid implements IDeviceInfoReader {
+    @NotNull
+    private final IDeviceInfoReader _deviceInfoReader;
+
+    public DeviceInfoReaderWithAuid(@NotNull IDeviceInfoReader iDeviceInfoReader) {
+        this._deviceInfoReader = iDeviceInfoReader;
+    }
+
+    @Override // com.unity3d.services.core.device.reader.IDeviceInfoReader
+    @NotNull
+    public Map<String, Object> getDeviceInfoData() {
+        Map<String, Object> deviceInfoData = this._deviceInfoReader.getDeviceInfoData();
+        String auid = Device.getAuid();
+        if (auid != null) {
+            deviceInfoData.put("auid", auid);
+        }
+        return deviceInfoData;
+    }
+}

@@ -1,0 +1,33 @@
+package com.google.android.gms.internal.ads;
+
+import com.vungle.ads.internal.ui.AdActivity;
+import org.json.JSONException;
+import org.json.JSONObject;
+/* compiled from: Proguard */
+/* loaded from: classes4.dex */
+final class zzdzs implements zzbog {
+    @Override // com.google.android.gms.internal.ads.zzbog
+    public final /* bridge */ /* synthetic */ JSONObject zzb(Object obj) throws JSONException {
+        zzdzt zzdztVar = (zzdzt) obj;
+        JSONObject jSONObject = new JSONObject();
+        JSONObject jSONObject2 = new JSONObject();
+        JSONObject jSONObject3 = new JSONObject();
+        if (((Boolean) com.google.android.gms.ads.internal.client.zzbd.zzc().zzb(zzbcv.zzjB)).booleanValue()) {
+            zzbvn zzbvnVar = zzdztVar.zzd;
+            jSONObject2.put("ad_request_url", zzbvnVar.zzg());
+            jSONObject2.put("ad_request_post_body", zzbvnVar.zzf());
+        }
+        zzbvn zzbvnVar2 = zzdztVar.zzd;
+        jSONObject2.put("base_url", zzbvnVar2.zzd());
+        jSONObject2.put("signals", zzdztVar.zzc);
+        zzdzx zzdzxVar = zzdztVar.zzb;
+        jSONObject3.put("body", zzdzxVar.zzc);
+        jSONObject3.put("headers", com.google.android.gms.ads.internal.client.zzbb.zzb().zzk(zzdzxVar.zzb));
+        jSONObject3.put("response_code", zzdzxVar.zza);
+        jSONObject3.put("latency", zzdzxVar.zzd);
+        jSONObject.put(AdActivity.REQUEST_KEY_EXTRA, jSONObject2);
+        jSONObject.put("response", jSONObject3);
+        jSONObject.put("flags", zzbvnVar2.zzi());
+        return jSONObject;
+    }
+}
