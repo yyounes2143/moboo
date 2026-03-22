@@ -199,6 +199,23 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    # PATCH: Replace StatusCode:10011 with StatusCode:10000 in decrypted response
+    const-string p1, "\"StatusCode\":10011"
+    const-string p3, "\"StatusCode\":10000"
+    invoke-virtual {p2, p1, p3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    move-result-object p2
+
+    const-string p1, "\"StatusCode\": 10011"
+    const-string p3, "\"StatusCode\": 10000"
+    invoke-virtual {p2, p1, p3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    move-result-object p2
+
+    const-string p1, "\"StatusCode\" : 10011"
+    const-string p3, "\"StatusCode\" : 10000"
+    invoke-virtual {p2, p1, p3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    move-result-object p2
+    # END PATCH
+
     .line 51
     .line 52
     .line 53
