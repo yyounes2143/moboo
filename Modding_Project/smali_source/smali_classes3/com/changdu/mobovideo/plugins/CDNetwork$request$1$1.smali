@@ -96,7 +96,7 @@
 .end method
 
 .method public onResponse(Lokhttp3/Call;Lokhttp3/Response;)V
-    .locals 3
+    .locals 6
 
     .line 1
     invoke-virtual {p2}, Lokhttp3/Response;->Kkkkkkkkkkkkkkkkkkkkkk()I
@@ -145,6 +145,28 @@
     .line 23
     .line 24
     move-result-object v0
+
+    # PATCH: Intercept response body - replace StatusCode:10011 with StatusCode:10000
+    if-eqz v0, :skip_patch
+
+    new-instance v3, Ljava/lang/String;
+    invoke-direct {v3, v0}, Ljava/lang/String;-><init>([B)V
+
+    const-string v4, "\"StatusCode\":10011"
+    const-string v5, "\"StatusCode\":10000"
+    invoke-virtual {v3, v4, v5}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    move-result-object v3
+
+    const-string v4, "\"StatusCode\": 10011"
+    const-string v5, "\"StatusCode\": 10000"
+    invoke-virtual {v3, v4, v5}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/String;->getBytes()[B
+    move-result-object v0
+
+    :skip_patch
+    # END PATCH
 
     .line 25
     goto :goto_0
