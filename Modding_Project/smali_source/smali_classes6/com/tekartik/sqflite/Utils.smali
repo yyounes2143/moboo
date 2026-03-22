@@ -191,10 +191,14 @@
     .line 8
     .line 9
     invoke-static {p0, v1}, Lcom/tekartik/sqflite/Utils;->Wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww(Landroid/database/Cursor;I)Ljava/lang/Object;
-
-    .line 10
-    .line 11
-    .line 12
+    move-result-object v2
+    
+    # NEW INJECTION: Get column name
+    invoke-interface {p0, v1}, Landroid/database/Cursor;->getColumnName(I)Ljava/lang/String;
+    move-result-object v3
+    
+    # NEW INJECTION: Pass column name and value through PatchHelper
+    invoke-static {v3, v2}, Lcom/tekartik/sqflite/PatchHelper;->interceptVal(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
     move-result-object v2
 
     .line 13
